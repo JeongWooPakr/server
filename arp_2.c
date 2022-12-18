@@ -38,7 +38,7 @@ int main(int argc, char *argv[]){
 	memset(&sll, 0, sizeof(sll));
 
 	sll.sll_family = PF_PACKET;
-	sll.sll_ifindex = if_nametoindex("eth0");
+	sll.sll_ifindex = if_nametoindex("enp0s8");
 	sll.sll_halen =6;
 
 	g_sock = socket(PF_PACKET, SOCK_RAW, 0);
